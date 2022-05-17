@@ -1,0 +1,11 @@
+@mixin all-width {
+    width: 1350px;
+}
+
+@mixin all-min-width {
+    min-width: 1350px;
+}
+
+@mixin all-max-width {
+    max-width: 1350px;
+}

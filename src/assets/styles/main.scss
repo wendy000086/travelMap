@@ -1,0 +1,55 @@
+@import 'mixins.scss';
+/*
+- Fonts
+-------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*
+- Text
+-------------------------------- */
+.fz-0 {
+    font-size: 0 !important;
+  }
+  
+  @for $i from 10 through 48 {
+    .fz-#{$i} {
+      font-size: #{$i}px !important;
+    }
+  }
+
+
+/*
+- common
+-------------------------------- */
+.wrap{
+    margin: 0 auto;
+
+    @include all-width;
+}
+
+input{
+  border: none;
+  &:focus{
+    outline:none
+  }
+
+  &::-webkit-input-placeholder{
+    color: #ACACAC;
+  }
+}
+
+select{
+  &:focus{
+    outline:none
+  }
+}
+
+h5,h6,p{
+  margin: 0;
+}
